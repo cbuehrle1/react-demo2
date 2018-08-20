@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Step from './step.js'
 import Count from './data.js'
@@ -13,7 +12,7 @@ class App extends Component {
   }
   handleStep(id, val) {
     if (!isNaN(parseInt(val))) {
-      let newCount = Count.updateCount(parseInt(id), parseInt(val));
+      const newCount = Count.updateCount(parseInt(id), parseInt(val));
       this.setState({
         count: newCount,
         warning: false

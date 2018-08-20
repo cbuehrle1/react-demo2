@@ -14,9 +14,13 @@ class App extends Component {
     if (!isNaN(parseInt(val))) {
       const newCount = Count.updateCount(parseInt(id), parseInt(val));
       this.setState({
-        count: newCount,
-        warning: false
+        count: newCount
       });
+    }else{
+      const newCount = Count.updateCount(parseInt(id), 0);
+      this.setState({
+        count: newCount
+      })
     }
   }
 

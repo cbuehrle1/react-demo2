@@ -1,5 +1,5 @@
 import React from 'react'
-function Step (props) {
+function step (props) {
   return (
     <input
       type='number'
@@ -7,4 +7,4 @@ function Step (props) {
     />
   )
 }
-export default Step;
+export default step;

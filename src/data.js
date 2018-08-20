@@ -12,7 +12,6 @@ let Count = {
     let newCounter = counter;
     newCounter.push(0);
     counter = newCounter;
-    console.log(counter);
   }
 }
 

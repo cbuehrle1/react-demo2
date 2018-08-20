@@ -46,7 +46,6 @@ class App extends Component {
       let newStep = this.makeStep(i);
       steps.push(newStep);
     }
-    console.log(steps)
     return steps;
   }
 

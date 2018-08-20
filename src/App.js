@@ -11,17 +11,11 @@ class App extends Component {
     }
   }
   handleStep(id, val) {
-    if (!isNaN(parseInt(val))) {
-      const newCount = Count.updateCount(parseInt(id), parseInt(val));
-      this.setState({
-        count: newCount
-      });
-    }else{
-      const newCount = Count.updateCount(parseInt(id), 0);
-      this.setState({
-        count: newCount
-      })
-    }
+    const value = !isNaN(parseInt(val)) ? parseInt(val) : 0;
+    const newCount = Count.updateCount(parseInt(id), value);
+    this.setState({
+      count: newCount
+    });
   }
 
   render() {
